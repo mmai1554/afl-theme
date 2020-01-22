@@ -1,8 +1,8 @@
 /**
-Theme Name: Alte Fischfabrik Putbus
+Theme Name: AFL
 Author: MaiNetCare GmbH
 Author URI: https://mainetcare.de
-Description: Theme für Alte Fischfabrik Putbus von MaiNetCare GmbH, basierend auf Astra Pro Theme
+Description: Theme für Alte Fischfabrik Lauterbach von MaiNetCare GmbH, basierend auf Astra Pro Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,9 +16,8 @@ $mi_color_blau2: #2f74b8;
 $mi_color_black: #3a3a3a;
 $mi_color_darkred: #ac241a;
 
-$mi_color_gold:#c79c40;
-$mi_color_dunkelblau:#272f32;
-
+$color_afl_blau:#3b5795;
+$color_afl_rose:#d9d0cd;
 body {
 
 }
@@ -37,25 +36,11 @@ body {
   li:before {
     display:inline-block;
     content: ' ';
-    background-image: url('/wp-content/themes/rkb-theme/includes/mnc/pdf-icon.svg');
-    background-size: 28px 28px;
-    height: 28px;
+    background-image: url('/wp-content/themes/afl-theme/includes/mnc/pdf-icon.svg');
+    background-repeat:no-repeat;
+    background-size: 28px 38px;
+    height: 30px;
     width: 28px;
-    //font-family: 'mncicons' !important;
-    //font-size: 20px;
-    //speak: none;
-    //font-style: normal;
-    //font-weight: normal;
-    //font-variant: normal;
-    //text-transform: none;
-    //line-height: 1;
-    //-webkit-font-smoothing: antialiased;
-    //color: $color;
-    //content: $code;
-    //display: inline-block;
-    //// margin-left: -1.3em; /* same as padding-left set on li */
-    //// margin-left: -1.3em; /* same as padding-left set on li */
-    //width: 1.3em; /* same as padding-left set on li */
   }
 
 }
@@ -96,7 +81,7 @@ body {
   }
 
   h3, h4 {
-    background-color: $mi_color_gold;
+    background-color: $color_afl_blau;
     padding: 3px 10px;
     color: #FFFFFF;
   }
@@ -105,7 +90,7 @@ body {
     float: right;
   }
 
-  @include mnciconlist($mi_color_darkred, "\eadf"); // tick);
+  @include mnciconlist($mi_color_darkred, "\eadf");
   li.application-msword:before {
     content: "\eae1";
     color: $mi_color_blau2;
@@ -115,26 +100,6 @@ body {
     content: "\eae2";
     color: #2b8a2d;
   }
-
-  //ul {
-  //  margin:0;
-  //}
-  //li {
-  //  list-style-type: none;
-  //}
-  //li {
-  //  display:table-row;
-  //  &:before {
-  //    $dim:28px;
-  //    display:table-cell;
-  //    content: ' ';
-  //    background-image: url('/wp-content/uploads/pdf-icon.svg');
-  //    background-repeat: no-repeat;
-  //    background-size: $dim $dim;
-  //    height: $dim;
-  //    width: $dim + 10px;
-  //  }
-  //}
 }
 
 .mi-ul-check {
@@ -155,44 +120,6 @@ body {
   }
 }
 
-.mi-activate-icons {
-  a:before {
-    font-family: "foundation-icons" !important;
-    font-size: 16px;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    width: 20px;
-  }
-
-  a.mail:before {
-    content: "\f16d";
-  }
-
-  a.mail {
-    padding-left: 20px;
-    @include bp(mobile) {
-      display: inline-block;
-    }
-  }
-
-  a.phone:before {
-    content: "\f1f8";
-  }
-}
-
-.uabb-hotspot-item {
-  .uabb-photo-img {
-    @include bp(mobile) {
-      width: 25px !important;
-    }
-  }
-}
 
 #mimap {
   height: 500px;
@@ -221,7 +148,7 @@ h1,h2,h3 {
   // letter-spacing: 0.05em;
 }
 .fl-slide-bg-photo {
-  border:1px solid $mi_color_gold;
+  border:1px solid $color_afl_rose;
   background-size: 90% !important;
 }
 
@@ -234,9 +161,9 @@ h1,h2,h3 {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
-  background: $mi_color_gold !important;
+  background: $color_afl_rose !important;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: lighten($mi_color_gold, 20%);
+  background: lighten($color_afl_rose, 20%);
 }

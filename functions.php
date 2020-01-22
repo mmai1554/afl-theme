@@ -1,10 +1,10 @@
 <?php
 /**
- * Residenz Kubitzer Bodden Theme functions and definitions
+ * Alte Fischfabrik Lauterbach Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Residenz Kubitzer Bodden
+ * @package AFL
  * @since 1.0.0
  */
 
@@ -18,7 +18,7 @@ define( 'CHILD_THEME_RKB_VERSION', '1.0.0' );
  */
 function child_enqueue_styles() {
 
-	wp_enqueue_style( 'rkb-theme-css', get_stylesheet_directory_uri() . '/style.css', array( 'astra-theme-css' ), CHILD_THEME_RKB_VERSION, 'all' );
+	wp_enqueue_style( 'afl-theme-css', get_stylesheet_directory_uri() . '/style.css', array( 'astra-theme-css' ), CHILD_THEME_RKB_VERSION, 'all' );
 
 }
 

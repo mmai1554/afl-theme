@@ -150,3 +150,9 @@ h1, h2, h3 {
   background: repeating-linear-gradient(to right, rgba(112, 112, 112, 0.1),
           rgba(112, 112, 112, 0.1) 1px, transparent 1px, transparent 6em);
 }
+
+.datatable {
+  tr:nth-child(odd) {
+    background-color: $color_afl_rose;
+  }
+}

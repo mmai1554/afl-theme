@@ -1,2 +1,1 @@
-# rkb-theme
 # afl-theme

@@ -16,8 +16,8 @@ $mi_color_blau2: #2f74b8;
 $mi_color_black: #3a3a3a;
 $mi_color_darkred: #ac241a;
 
-$color_afl_blau:#3b5795;
-$color_afl_rose:#d9d0cd;
+$color_afl_blau: #3b5795;
+$color_afl_rose: #d9d0cd;
 body {
 
 }
@@ -34,10 +34,10 @@ body {
     margin-bottom: 1em;
   }
   li:before {
-    display:inline-block;
+    display: inline-block;
     content: ' ';
     background-image: url('/wp-content/themes/afl-theme/includes/mnc/pdf-icon.svg');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 28px 38px;
     height: 30px;
     width: 28px;
@@ -102,23 +102,25 @@ body {
 
 // let the header win over openstreetmap (400 per default)
 .site-header {
-  z-index:410;
+  z-index: 410;
 }
 
 .mnc-infotext {
-  p,li {
-    font-size:22px;
+  p, li {
+    font-size: 22px;
   }
+
   ul {
-    margin-left:1.1em;
+    margin-left: 1.1em;
   }
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
   // letter-spacing: 0.05em;
 }
+
 .fl-slide-bg-photo {
-  border:1px solid $color_afl_rose;
+  border: 1px solid $color_afl_rose;
   background-size: 90% !important;
 }
 
@@ -136,4 +138,15 @@ h1,h2,h3 {
 
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: lighten($color_afl_rose, 20%);
+}
+
+.mnc_footer {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.mnc-striped-bg {
+  background: repeating-linear-gradient(to right, rgba(112, 112, 112, 0.1),
+          rgba(112, 112, 112, 0.1) 1px, transparent 1px, transparent 6em);
 }

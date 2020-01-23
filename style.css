@@ -59,3 +59,7 @@ Template: astra
 .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover { background: #d9d0cd !important; }
 
 .bx-wrapper .bx-pager.bx-default-pager a { background: white; }
+
+.mnc_footer a:hover { text-decoration: underline; }
+
+.mnc-striped-bg { background: repeating-linear-gradient(to right, rgba(112, 112, 112, 0.1), rgba(112, 112, 112, 0.1) 1px, transparent 1px, transparent 6em); }
